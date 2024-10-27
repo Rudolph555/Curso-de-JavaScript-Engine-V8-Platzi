@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola!</h1>
+
+
+    <script src="ejemplo1.js"></script>
+</body>
+</html>
+
+<!-- Ejecución en consola del navegador 
+window
+Salida: Window {window: Window, self: Window, document: document, name: '', location: Location, …}....
+this
+Salida: Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+window == this
+Salida: true
+-->
+
+<!--HOISTING: solo pasa para Variables y Funciones
+Ejemplo en Consola:
+    console.log(nombre);        //llamamos a la variable antes de declararla
+    apellido();                 //llamamos a la función antes de declararla
+
+    var nombre = "Ruddy";
+    function apellido() {
+        console.log("Cruz");
+    }
+Salida:
+    undefined           //como no esta declarada, el navegador crea un var nombre = undefine
+    Cruz               //Sube la funcion hasta el principio, crea un espacio de memoria con el nombre de la funcion y luego lo ejecuta cuando lo encuentra
+    //todo esto en el Profiler(Monitor)
+
+En las variables con tipo const, no sucede esto, pues es necesario declarar la variable para poder llamarla, lo que son buenas prácticas
+-->
