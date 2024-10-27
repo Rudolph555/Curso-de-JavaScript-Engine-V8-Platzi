@@ -28,5 +28,5 @@ console.log("taco 4");
     undefined
     Torta
 
-JavaScript toma las tareas y las ejecuta de forma sincrona pero cuando encuentra una tarea q no le pertenece como el setTimeout que es una WebApi se la pasa y cuando el navegador la termina de ejecutar lo pone en un Callback esperando que JS termina las tareas que tiene almacenadas en su Call Stack cuando el Event Loop verifica que esta vacio entonces se ejecuta lo que estaba en el Callback, por lo que aunque el setTimeout este en 0, igual sigue este proceso y es así como puede existir Asincronismo.
+JavaScript toma las tareas y las ejecuta de forma sincrona pero cuando encuentra una tarea q no le pertenece como el setTimeout que es una WebApi se la pasa y cuando el navegador la termina de ejecutar lo pone en un Callback esperando que JS termina las tareas que tiene almacenadas en su Call Stack cuando el Event Loop verifica que esta vacio entonces se ejecuta lo que estaba en el Call, por lo que aunque el setTimeout este en 0, igual sigue este proceso y es así como puede existir Asincronismo.
 */
